@@ -13,9 +13,5 @@ list.addEventListener('click', (e) => {
 
   e.preventDefault();
 
-  const miniImg = link.querySelector('img');
-
-  if (miniImg) {
-    mainImage.src = link.getAttribute('href');
-  }
+  mainImage.src = link.href;
 });
